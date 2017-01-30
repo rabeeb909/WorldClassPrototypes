@@ -1,0 +1,34 @@
+* {margin:0; padding:0; }
+
+body{
+	background: #ccc;
+}
+
+h1,h2, h3, h4, h5, h6{
+	font-family: Georgia, Serif;
+	font-weight: normal;
+	color: green;
+	font-style: italic;
+	padding: 5px;
+	border-bottom: 1px dotted green;
+}
+
+h1 a {
+	color: green;
+	text-decoration: none;
+}
+
+h1 a:hover{
+	color: darkgreen;
+}
+
+p{
+	padding: 3px;
+}
+
+#page-wrap{
+	width: 75%;
+	background: #fff;
+	margin: 20px;
+	padding: 15px;
+}
