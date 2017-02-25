@@ -1,3 +1,21 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "anwarr@mail.gvsu.edu"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $name = $_POST['name'];
+    $subject = $_POST['subject'];
+    $subject2 = "Copy of your form submission" . $_POST['subject'];
+    $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en" class="csstransforms csstransforms3d csstransitions">
 <head>
@@ -163,7 +181,7 @@
               <div class="form-group">
                 <textarea name="message" class="form-control" rows="8" placeholder="Message" required=""></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Send Message</button>
+              <button type="submit" name="submit" value="submit" class="btn btn-primary">Send Message</button>
             </form>
           </div>
         </div>

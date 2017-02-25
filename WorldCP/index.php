@@ -7,9 +7,11 @@
 
 <body>
 
-<div id="pagee-wrap">
+<div id="page-wrap">
 	<h1>World Class Prototypes</h1>
 	<p>Website</p>
+</div>
+
 
 </body>
 
