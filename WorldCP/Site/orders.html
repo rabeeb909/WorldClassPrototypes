@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" class="csstransforms csstransforms3d csstransitions">
 <head>
+
+<script>
+  function validateForm() {
+    var a = document.forms["orderForm"]["email"].value;
+    if(a == ""){
+      document.getElementById("message").innerHTML = "Name required";
+      alert("Name required");
+      return false;
+    }
+  }
+
+</script>
+
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,6 +63,15 @@
   <!--/nav-->
 </header>
 <!--/header-->
+<div>
+  <h4></h4>
+</div>
+
+
+<div class="orderinfo">
+  <h2 color="Red">Request a Quote</h2>
+  <p>Please start by filling in the form below, providing as much information as you can, such as the quantity, the type of material, nad any other important information you think we will need to know. Items marked with an * are required. If you are unsure which process should be used to build your parts, let us know the intended use so that we can help you select the apropriate process. If you have .jpgs, .bitmaps, or .pdfs that would help us understan your needs please include them as well.</p>
+</div>
 
 
 <div align="center">
@@ -57,39 +79,93 @@
   <h2>Form</h2>
 
   <table>
-  <form >
+  <form name="orderForm" onsubmit="return validateForm()" method="post">
     <tr>
       <th>
-    Email:
+    Email: *
     </th>
       <td>
-    <input type="text" name="email"><br><br>
+    <input type="text" name="email" required><br><br>
     </td>
       </tr>
 <tr>
 <th>
-    Company:
+    Company: *
 </th>
 <td>
-    <input type="text" name="company"><br><br>
+    <input type="text" name="company" required><br><br>
 </td>
  </tr>
 <tr>
 <th>
-    Contact Name: 
+    Contact Name: *
 </th>
 <td> 
-   <input type="text" name="contactName"><br><br>
+   <input type="text" name="contactName" required><br><br>
 </td>
  </tr>
 <tr>
 <th>
-    Phone:
+    Phone: *
 </th>
 <td>
-    <input type="text" name="phoneNum"><br><br>
+    <input type="text" name="phoneNum" required><br><br>
 </td>
  </tr>
+<tr>
+<th>
+    Process:
+</th>
+<td>
+    <input list="process" name="process">
+  <datalist id="process">
+    <option value="Stereolithography (SLA)">
+    <option value="High Resoultion Stereolithography (SLA Hi-Res)">
+    <option value="Selective Laser sintering (SLS)">
+    <option value="Fused Deposition Modeling (FDM)">
+    <option value="Object/Polyjetting">
+    <option value="ZCorp Binder Jetting">
+    <option value="Cast Urethane">
+    <option value="CNC Machining">
+    <option value="Continuous Liquid Interface Production (CLIP)">
+    <option value="Unsure-please recommend">
+  </datalist><br><br>
+</td>
+ </tr>
+<tr>
+<th>
+    Material:
+</th>
+<td>
+    <input list="material" name="material">
+  <datalist id="material">
+    <option value="Prototyping | PR25">
+    <option value="Cyaate Ester | CE 220">
+    <option value="Flexiblee Polyurethane | FPU 230">
+    <option value="Elastomeric Polyurethane (EPU)">
+    <option value="Unsure-please recommend">
+  </datalist><br><br>
+</td>
+ </tr>
+<tr>
+<th>
+    Quantity per Part<br>(File Name):
+</th>
+<td>
+    <input type="text" name="quantity" required><br><br>
+    <h5>Please specify below if the quantites of<br>eache part are different</h5>
+</td>
+ </tr>
+<tr>
+<th>
+    Paint Level:
+</th>
+<td>
+    <input type="text" name="paint" required><br><br>
+</td>
+ </tr>
+
+
 <tr>
 <th>
     Additional Information:
@@ -98,6 +174,13 @@
     <textarea name="Info" rows="10" col="30"></textarea><br>
 </td>
  </tr>
+<tr>
+<th>
+  <input type="file1" id="myFile1"><br>
+  <input type="file2" id="myFile2"><br>
+</th>
+</tr>
+
 <tr>
 <th>
    <input type="submit" value="Submit"><br><br>
