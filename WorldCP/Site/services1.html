@@ -31,19 +31,22 @@
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 					<span class="sr-only">Toggle navigation</span>
 				</button>
-				<a class="navbar-brand" href="index.html"><img src="demo/logo.jpg" class = "img-rounded" style="display: inline-block;">
-				<span style="font-size:3em;color: #FFF;line-height: .2em;font-weight: bold;">World Class Prototypes</span></a>
+				<a class="navbar-brand" href="index.html"><img src="demo/logo.jpg" class = "img-rounded" style="display: inline-block;"></a>
 			</div>
-			
+
 			<!-- Right side -->
 			<div class="collapse navbar-collapse navbar-right">
 				<ul class="nav navbar-nav">
-				
+
 					<!-- Home -->
+					<div class = "dropdown">
 					<button class="btn btn-default dropdown-toggle">Home</button>
-					
+					</div>
 					<!-- About -->
-					<button class="btn btn-default dropdown-toggle" type="button">About</button>
+					<div class = "dropdown">
+						<a href ="about.html"><button class="btn btn-default dropdown-toggle" type="button">About</button></a>
+					</div>
+
 
 					<!-- Gallery -->
 					<div class = "dropdown">
@@ -55,116 +58,184 @@
 							<li><a href="#">Fiber Reinforced Composites</a></li>
 						</ul>
 					</div>
-      <div class="collapse navbar-collapse navbar-right">
-        <ul class="nav navbar-nav">
-          <li class="scroll"><a href="index.html">Home</a></li>
-          <li class="scroll"><a href="about.html">About</a></li>
-          <li class="scroll"><a href="#services">Services</a></li>
-          <li class="scroll"><a href="gallery.html">Gallery</a></li>
-          <li class="scroll"><a href="contact.html">Contact Us</a></li>
-		  <li class="scroll"><a href="orders.html">Request A Quote!</a></li>
-        </ul>
-      </div>
+
+					<!-- Services -->
+					<div class = "dropdown">
+						<button class="btn btn-default" type="button" data-toggle="dropdown">Services<span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li ><a href="#recentwork">Recent projects</a></li>
+							<li class="divider"></li>
+							<li><a href="#modeling">Modeling</a></li>
+							<li><a href="#rapidcasting">Rapids Castings</a></li>
+							<li><a href="#rapidprototypes">Rapid Prototypes</a></li>
+							<li><a href="#cncmachining">CNC Machining</a></li>
+							<li><a href="#rotomold">Rotational Molding</a></li>
+							<li><a href="#vacform">Vacuum Forming</a></li>
+							<li><a href="#injectionmolding">Injection Molding</a></li>
+							<li><a href="#frc">Fiber Reinforced Composites</a></li>
+							<li><a href="#pnf">Production Nests and Fixtures</a></li>
+						</ul>
+					</div>
+
+					<!-- Request a quote button -->
+					<div class = "dropdown">
+						<a href ="orders.html"<button class="btn btn-default" type = "button">Request a quote</button></a>
+					</div>
     </div>
     <!--/.container-->
   </nav>
   <!--/nav-->
 </header>
 <!--/header-->
-<section id="molding">
-  <div class="container">
-    <div class="section-header">
-      <h2 class="section-title wow fadeInDown animated"
-          style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">Modeling</h2>
-					<!-- Services -->
-					<div class = "dropdown">
-						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Services<span class="caret"></span></button>
-						<ul class="dropdown-menu">
-							<li><a href="#modeling">Modeling</a></li>
-							<li><a href="#rapidC">Rapids Castings</a></li>
-							<li><a href="#rapidP">Rapid Prototypes</a></li>
-							<li><a href="#cnc">CNC Machining</a></li>
-							<li><a href="#RotM">Rotational Molding</a></li>
-							<li><a href="#vacForm">Vacuum Forming</a></li>
-							<li><a href="#injectM">Injection Molding</a></li>
-							<li><a href="#frc">Fiber Reinforced Composites</a></li>
-							<li><a href="#pnf">Production Nests and Fixtures</a></li>
-						</ul>
-					</div>
-
-					<!-- Quote -->
-					<div class = "dropdown">
-						<a href="orders.html" class="btn btn-default">Request A Quote!</a>
-					</div>
-					
-				<!-- NavbarRight list -->
-				</ul>
-			<!-- navbar-right-->
-			</div>
-		<!-- Container -->
-		</div>
-	<!--/nav-->
-	</nav>
-<!--/header-->
-</header>
-
-
 
 <!--/Content on page -->
 
+<header>
+<div class="container">
+	<div class="row">
+
+
+		<div class="col-sm-3">
+
+		</div>
+
+<a name ="recentwork" >
+			<div class="col-sm-6">
+
+		</div>
+		</a>
+		<div class="col-sm-3">
+
+		</div>
+	</div>
+
+</div>
+</header>
+
 <!-- First row -->
-<section id="hero-banner">
 		<div class="container">
 		<div class="row">
-        <div class="col-sm-6">
+        <a name="modeling">
+					<div class="col-sm-6">
 			<!-- First box -->
 			<div class="section-header">
-				<h2 class="section-title wow fadeInDown animated">Modeling</h2>
+			<h2 class="section-title wow fadeInDown animated">Modeling</h2>
+				<div class = "dropdown">
+					<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Modeling services2<span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li><a href="#recentmodels">Models</a></li>
+						<li class="divider"></li>
+						<li><a href="#functionalmodels">Functional models</a></li>
+						<li><a href="#mockups">Mock ups</a></li>
+						<li><a href="#scalemodels">Scale models</a></li>
+						<li><a href="#architecturalmodels">Architectural Models</a></li>
+						<li><a href="#preproduction">Preproduction</a></li>
+						<li><a href="#finishedwork">Finished Work</a></li>
+					</ul>
+
 			</div>
-			<p class="fadeInDown animated">World Class prototypes offers modeling!</p>
-			<button type="button" class="btn btn-default"> Click here to find out more</button>
-			
+
+				<a href="orders.html" class="btn btn-default">Request A Quote!</a>
+				<p class="wow fadeInDown animated">
+					Modeling is a quick an easy way to bring your idea in your head to the material world. Help us help you bring your imagination to life and hold onto it with your own hands.
+
+				</p>
+
+						<!-- NavbarRight list -->
+						</ul>
+					<!-- navbar-right-->
+					</div>
+
+				<!-- Container -->
 		</div>
-		<div class="col-sm-6">
+	</a>
+			<a name="rapidcasting">
+			<div class="col-sm-6">
 			<!-- Second box -->
 			<div class="section-header">
 				<h2 class="section-title wow fadeInDown animated">Rapid Casting</h2>
 
 				<p class="wow fadeInDown animated">
-				World class prototypes offers rapid casting to quickly get produce a cast of what you want!
+					Urethane castings are a great way to generate prototype parts for trade shows, engineering and design proveouts, sales and marketing samples or short run pre-production parts. Urethanes have a wide variety of physical properties which can simulate most production materials for part evaluation.
+		Urethanes simulate various production materials.<br> The materials available offer a range of structural integretity ranging from a soft sponge to as hard as wood. This type of service is limited to your imagination! Check to see some of our work!
 				</p>
 				<button type="button" class="btn btn-default"> Click here to find out more</button>
 			</div>
 		</div>
+		</a>
 	</div>
 	</div>
-</section>
+
+
 <!-- Second row -->
-<section id="hero-banner">
 	<div class="container">
 		<div class="row">
-        <div class="col-sm-6">
+        <a name = "rapidprototypes">
+					<div class="col-sm-6">
+						<div class="container">
 			<!-- First box -->
 			<div class="section-header">
-				<h2 class="section-title wow fadeInDown animated">Modeling</h2>
+				<h2 class="section-title wow fadeInDown animated">Rapid Prototypes</h2>
 				<p class="fadeInDown animated"
-				 style="visibility: visible;">Lorem ipsum dolor
-				sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+				 style="visibility: visible;">Rapid prototypes</p>
+			</div>
 			</div>
 		</div>
+	</a>
 		<div class="col-sm-6">
+			<a name="cncmachining">
+			<div class ="container" >
+
+
 			<!-- Second box -->
 			<div class="section-header">
-				<h2 class="section-title wow fadeInDown animated">Rapid Casting</h2>
+				<h2 class="section-title wow fadeInDown animated">CNC Machining</h2>
 
-				<p class="wow fadeInDown animated"
-				 style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">Lorem ipsum dolor
+				<p class="wow fadeInDown animated">Lorem ipsum dolor
 				sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
 			</div>
 		</div>
+		</a>
+		</div>
 	</div>
+	</a>
 	</div>
-</section>
+
+	<!-- Third row -->
+		<div class="container">
+			<div class="row">
+	        <a name = "rotomold">
+						<div class="col-sm-6">
+							<div class="container">
+				<!-- First box -->
+				<div class="section-header">
+					<h2 class="section-title wow fadeInDown animated">Rotational Molding</h2>
+					<p class="fadeInDown animated"
+					 style="visibility: visible;">Lorem ipsum dolor
+					sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+				</div>
+				</div>
+			</div>
+		</a>
+			<div class="col-sm-6">
+				<a name="vacform">
+				<div class ="container" >
+
+
+				<!-- Second box -->
+				<div class="section-header">
+					<h2 class="section-title wow fadeInDown animated">Vacuum Forming</h2>
+
+					<p class="wow fadeInDown animated"
+					 style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">Lorem ipsum dolor
+					sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+				</div>
+			</div>
+			</a>
+			</div>
+		</div>
+		</a>
+		</div>
 
 <footer id="footer">
 	<div class="container">
