@@ -1,46 +1,67 @@
 <!DOCTYPE html>
 <html lang="en" class="csstransforms csstransforms3d csstransitions">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="webthemez">
-  <title>World Class Prototypes</title>
-  <!-- core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/animate.min.css" rel="stylesheet">
-  <link href="css/prettyPhoto.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
-  <!--[if lt IE 9]>
-  <script src="js/html5shiv.js"></script>
-  <script src="js/respond.min.js"></script>
-  <![endif]-->
-  <link rel="shortcut icon" href="">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="webthemez">
+	<title>World Class Prototypes</title>
+	<!-- core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/prettyPhoto.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<link rel="shortcut icon" href="">
 </head>
 
 <body id="home">
 
 <header id="header">
-  <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span> 
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html"><span style="font-size: 35px;color: #FFF;line-height: 1em;font-weight: bold;">World Class Prototypes</span></a>
-      </div>
+	<nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
+		<div class="container-fluid">
+		<!-- Building of the top navigation bar -->
+			<!-- Left side -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+				</button>
+				<a class="navbar-brand" href="index.html"><img src="demo/logo.jpg" class = "img-rounded" style="display: inline-block;">
+				<span style="font-size:3em;color: #FFF;line-height: .2em;font-weight: bold;">World Class Prototypes</span></a>
+			</div>
+			
+			<!-- Right side -->
+			<div class="collapse navbar-collapse navbar-right">
+				<ul class="nav navbar-nav">
+				
+					<!-- Home -->
+					<button class="btn btn-default dropdown-toggle">Home</button>
+					
+					<!-- About -->
+					<button class="btn btn-default dropdown-toggle" type="button">About</button>
 
+					<!-- Gallery -->
+					<div class = "dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Gallery<span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li><a href="#">Recent prototypes</a></li>
+							<li class="divider"></li>
+							<li><a href="#">CNC Machining</a></li>
+							<li><a href="#">Fiber Reinforced Composites</a></li>
+						</ul>
+					</div>
       <div class="collapse navbar-collapse navbar-right">
         <ul class="nav navbar-nav">
           <li class="scroll"><a href="index.html">Home</a></li>
           <li class="scroll"><a href="about.html">About</a></li>
           <li class="scroll"><a href="#services">Services</a></li>
           <li class="scroll"><a href="gallery.html">Gallery</a></li>
+          <li class="scroll"><a href="contact.html">Contact Us</a></li>
 		  <li class="scroll"><a href="orders.html">Request A Quote!</a></li>
         </ul>
       </div>
@@ -55,39 +76,114 @@
     <div class="section-header">
       <h2 class="section-title wow fadeInDown animated"
           style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">Modeling</h2>
+					<!-- Services -->
+					<div class = "dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Services<span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li><a href="#modeling">Modeling</a></li>
+							<li><a href="#rapidC">Rapids Castings</a></li>
+							<li><a href="#rapidP">Rapid Prototypes</a></li>
+							<li><a href="#cnc">CNC Machining</a></li>
+							<li><a href="#RotM">Rotational Molding</a></li>
+							<li><a href="#vacForm">Vacuum Forming</a></li>
+							<li><a href="#injectM">Injection Molding</a></li>
+							<li><a href="#frc">Fiber Reinforced Composites</a></li>
+							<li><a href="#pnf">Production Nests and Fixtures</a></li>
+						</ul>
+					</div>
 
-      <p class="wow fadeInDown animated"
-         style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
-    </div>
-    
-		
+					<!-- Quote -->
+					<div class = "dropdown">
+						<a href="orders.html" class="btn btn-default">Request A Quote!</a>
+					</div>
+					
+				<!-- NavbarRight list -->
+				</ul>
+			<!-- navbar-right-->
+			</div>
+		<!-- Container -->
 		</div>
+	<!--/nav-->
+	</nav>
+<!--/header-->
+</header>
+
+
+
+<!--/Content on page -->
+
+<!-- First row -->
+<section id="hero-banner">
+		<div class="container">
+		<div class="row">
+        <div class="col-sm-6">
+			<!-- First box -->
+			<div class="section-header">
+				<h2 class="section-title wow fadeInDown animated">Modeling</h2>
+			</div>
+			<p class="fadeInDown animated">World Class prototypes offers modeling!</p>
+			<button type="button" class="btn btn-default"> Click here to find out more</button>
+			
+		</div>
+		<div class="col-sm-6">
+			<!-- Second box -->
+			<div class="section-header">
+				<h2 class="section-title wow fadeInDown animated">Rapid Casting</h2>
+
+				<p class="wow fadeInDown animated">
+				World class prototypes offers rapid casting to quickly get produce a cast of what you want!
+				</p>
+				<button type="button" class="btn btn-default"> Click here to find out more</button>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
+<!-- Second row -->
+<section id="hero-banner">
+	<div class="container">
+		<div class="row">
+        <div class="col-sm-6">
+			<!-- First box -->
+			<div class="section-header">
+				<h2 class="section-title wow fadeInDown animated">Modeling</h2>
+				<p class="fadeInDown animated"
+				 style="visibility: visible;">Lorem ipsum dolor
+				sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<!-- Second box -->
+			<div class="section-header">
+				<h2 class="section-title wow fadeInDown animated">Rapid Casting</h2>
+
+				<p class="wow fadeInDown animated"
+				 style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">Lorem ipsum dolor
+				sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+			</div>
+		</div>
+	</div>
 	</div>
 </section>
 
-
-
-
-
 <footer id="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        © 2015 World Class Prototypes.
-      </div>
-      <div class="col-sm-6">
-        <ul class="social-icons">
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-          <li><a href="#"><i class="fa fa-github"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				© 2017 World Class Prototypes.
+			</div>
+			<div class="col-sm-6">
+				<ul class="social-icons">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+					<li><a href="#"><i class="fa fa-github"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </footer>
 <!--/#footer-->
 
