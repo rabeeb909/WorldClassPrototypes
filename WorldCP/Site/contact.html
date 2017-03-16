@@ -77,12 +77,11 @@ if(isset($_POST['submit'])){
 <section id="contact-us">
   <div class="container">
     <div class="section-header">
-      <h2 class="section-title wow fadeInDown animated"
-          style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">Contact Us</h2>
+      <h1 class="section-title wow fadeInDown animated"
+          style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">Contact Us</h1>
 
       <p class="wow fadeInDown animated"
-         style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+         style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">Please fill out the form below if you have any questions or concerns for us and we will get back to you as soon as we can!  And if you would like to place an order click the "Request A Quote!" tab near the top right of the page! Have a great day!</p>
     </div>
   </div>
 </section>
@@ -123,9 +122,25 @@ if(isset($_POST['submit'])){
               <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
           </div>
+		  
         </div>
       </div>
     </div>
+	
+<center><div id="map" style="width:600px;height:400px;"></center>
+  <script>
+  function myMap() {
+      var mapCanvas = document.getElementById("map");
+      var mapOptions = {
+          center: new google.maps.LatLng(51.5, -0.2),
+          zoom: 10
+      };
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+  }
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
   </div>
 </section>
 <!--/#bottom-->

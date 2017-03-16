@@ -111,6 +111,7 @@ hr {
 
 .btn.btn-primary {
   background: #25A4D7;
+  margin: 20px;
 }
 
 .btn.btn-primary:hover,
@@ -517,6 +518,10 @@ ul.nostyle i {
 
 #slides .media.service-box:first-child {
   margin-top: 80px;
+}
+
+#slides p {
+	font-weight: bold;
 }
 
 #features h2, #portfolio p {
