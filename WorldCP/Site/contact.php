@@ -67,7 +67,7 @@
     </div>
   </div>
 </section>
-
+<h3><?php include "feedback_email.php"?></h3>
 <section id="contact">
 
   <div class="container">
@@ -103,7 +103,7 @@
               </div>
               <button type="submit" name="submit" class="btn btn-primary">Send Message</button>
             </form>
-<h3><?php include "feedback_email.php"?></h3>
+
           </div>
         </div>
       </div>
