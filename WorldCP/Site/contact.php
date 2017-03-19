@@ -65,6 +65,7 @@
       <p class="wow fadeInDown animated"
          style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">We always welcome feedback. Below is our contact information and also a feedback form.<br></p>
     </div>
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBNVLOeDktpd5jW1bfUdsW__zMNKOjUBK8'></script><div style='overflow:hidden;height:285px;width:722px;'><div id='gmap_canvas' style='height:285px;width:722px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://www.embedmap.net/'>google map embed</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=32e22ebb5eaa6f0046faeb6e4d0a426494d7c42e'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(42.804221,-86.10038350000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(42.804221,-86.10038350000002)});infowindow = new google.maps.InfoWindow({content:'<strong>World Class Prototypes, Inc.</strong><br>243 129th Avenue<br>49424 Holland<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
   </div>
 </section>
 <h3><?php include "feedback_email.php"?></h3>
