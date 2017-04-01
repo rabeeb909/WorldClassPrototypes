@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" class="csstransforms csstransforms3d csstransitions">
+<head>
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="webthemez">
+  <title>World Class Prototypes</title>
+  <!-- core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/prettyPhoto.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="form.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+  <link rel="shortcut icon" href="">
+</head>
+
+<body id="home">
+
+<header id="header">
+  <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span> 
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><span style="font-size: 35px;color: #FFF;line-height: 1em;font-weight: bold;">World Class Prototypes</span></a>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-right">
+        <ul class="nav navbar-nav">
+          <li class="scroll"><a href="index.html">Home</a></li>
+          <li class="scroll"><a href="about.html">About</a></li>
+          <li class="scroll"><a href="services.html">Services</a></li>
+          <li class="scroll"><a href="gallery.html">Gallery</a></li>
+          <li class="scroll"><a href="contact.php">Contact Us</a></li>
+		  <li class="scroll"><a href="orders.html">Request A Quote!</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--/.container-->
+  </nav>
+  <!--/nav-->
+</header>
+<!--/header-->
+<div>
+  <h4></h4>
+</div>
+
+<div class="container">
+<div class="orderinfo">
+<h3><?php include "mail)order.php"?></h3>
+  <h2 style="color:red;">Request a Quote</h2>
+  <p>Please start by filling in the form below, providing as much information as you can, such as the quantity, the type of material, nad any other important information you think we will need to know. Items marked with an * are required. If you are unsure which process should be used to build your parts, let us know the intended use so that we can help you select the apropriate process. If you have .jpgs, .bitmaps, or .pdfs that would help us understan your needs please include them as well.</p>
+  <h3>
+    <span style="font-size:12pt;">
+      <em>
+	<strong>
+	  ** We have been experiencing issues with uploads via Internet Explorer. We recommend using a different browser if possible (e.g. Google Chrome, Mozilla Firefox, Opera, etc.) until the issue is resolved. We apologize for any inconvenience, and hope to have the issue resolved as soon as possible. Thank you. **
+	<strong>
+      </em>
+    </span>
+  </h3>
+  <br><br>
+</div><!--end of body text-->
+
+
+<div class="col-md-6">
+<form id="sfUploadForm" enctype="mulipart/form-data" method="post" action="#">
+  <div id="uploadFormContainer">
+    <div class="userinput">
+      <dl>
+	<dt>
+	  <label>
+	    Email: 
+	    <span class="red">*</span>
+	    </label>
+	  </dt>
+	<dd>
+	  <input type="text" name="email">
+	  </dd>
+	</dl>
+      </dl>
+<dl>
+  <dt>
+    <label>
+      Company Name: 
+      <span class="red">*</span>
+      </label>
+    </dt>
+  <dd>
+    <input type="text" name="companyName">
+    </dd>
+  </dl>
+<dl>
+  <dt>
+    <label>
+      Contact Name: 
+      <span class="red">*</span>
+      </label>
+    </dt>
+  <dd>
+    <input type="text" name="contactName">
+    </dd>
+  </dl>
+<dl>
+  <dt>
+    <label>
+      Phone: 
+      <span class="red">*</span>
+      </label>
+    </dt>
+  <dd>
+    <input type="text" name="phone">
+    </dd>
+  </dl>
+<dl>
+<dt>
+  <label>Process: </label>
+  </dt>
+<dd>
+  <input list="process" name="process">
+  <datalist id="process">
+    <option value="Stereolithography (SLA)">
+      <option value="High Resoultion Stereolithography (SLA Hi-Res)">
+	<option value="Selective Laser sintering (SLS)">
+	  <option value="Fused Deposition Modeling (FDM)">
+	    <option value="Object/Polyjetting">
+	      <option value="ZCorp Binder Jetting">
+		<option value="Cast Urethane">
+		  <option value="CNC Machining">
+		    <option value="Continuous Liquid Interface Production (CLIP)">
+		      <option value="Unsure-please recommend">
+			</datalist>
+  </dd>
+</dl>
+<dl>
+  <dt>
+    <label>Material: </label>
+    </dt>
+  <dd>
+    <input list="material" name="material">
+    <datalist id="material">
+      <option value="Prototyping | PR25">
+	<option value="Cyaate Ester | CE 220">
+	  <option value="Flexiblee Polyurethane | FPU 230">
+	    <option value="Elastomeric Polyurethane (EPU)">
+	      <option value="Unsure-please recommend">
+		</datalist>
+    </dd>
+  </dl>
+<dl>
+  <dt>
+    <label>
+      Quantity per Part <br> (File Name)
+      </label>
+    </dt>
+  <dd>
+    <b>
+      <input type="text" name="quantity"><br>
+      </b>
+    <span>
+      Please specify below if the quantities of" <br> "each part are different.
+      </span>
+    </dd>
+  </dl>
+<dl>
+  <dt>
+    <label>Finish Level: </label>
+    </dt>
+  <dd>
+    <input list="level" name="finishLevel">
+    <datalist id="level">
+      <option value="level 1">
+	<option value="level 2">
+	  <option value="level 3">
+	    <option value="level 4">
+	      </datalist>
+    </dd>
+  </dl>
+<dl>
+  <dt>
+    <label>Additional Information: </label>
+    </dt>
+  <dd>
+    <textarea id="additionalInfo" name="additionalInfo" cols="50" rows="5"></textarea>
+    </dd>
+  </dl>
+<br><br><br><br>
+
+    </div> <!--userinput-->
+<div class="info-box"> Files cannot exceed 2 GB<br></div>
+<div id="fileupload">
+  <label>File1:</label>
+  <input type="file" name="attachFile1">
+  <br>
+   <label>File2:</label>
+  <input type="file" name="attachFile2">
+  <br>
+ <label>File3:</label>
+  <input type="file" name="attachFile3">
+  <br>
+ <label>File4:</label>
+  <input type="file" name="attachFile4">
+  <br>
+
+  <input type="submit" name="submit" value="Upload files">
+  </div> <!--fileupload-->
+
+
+  </div><br>
+</form>
+
+</div><!--col 1 form-->
+
+<div class="col-md-6">
+  <div id="textCol2">
+    <h2>Preferred file formats:</h2>
+    <p><em>.stl  .sldprt  iges(.igs)  .step(.stp)</em></p>
+    <h2>STL Viewers</h2>
+    <p>We recommend viewing your .stl file before sending it to us for a quote. MiniMagics and Solid View Lite are both programs that can be downloaded free to enable you to do so.
+    </p>
+    <h2>SLA Materials</h2>
+    <p>
+      <strong>Accura®</strong><strong> 25</strong>: durable, off-white, PP-like<br>
+      <strong>Accura®</strong><strong> 25</strong>: durable, off-white, PP-like<br>
+      <strong>Accura®</strong><strong> 25</strong>: durable, off-white, PP-like<br>
+      <strong>Accura®</strong><strong> 25</strong>: durable, off-white, PP-like<br>
+    </p>
+    <h2>SLS Materials</h2>
+    <p>
+      <strong>Polyamide--PA</strong>: low moistre absorption, white, nylon<br>
+      <strong>Glass Filled--GF</strong>: tempertaure resistance, grey, 30% glass- filled nylon<br>
+      <strong>Alulon</strong>: machinable, metallic grey, PA & al<br>
+    </p>
+    <h2>CLIP Materials</h2>
+    <p>
+      <strong>Cyanate Ester | CE 220</strong>: A strong resin that provides excellent thermal stablilty<br>
+      <strong>Elastomeric Polyurethane | EPU 40</strong>: a general purpose stretchable resin that is elastic over a wide temperature range<br>
+      <strong>Prototyping Resin | PR 25</strong>: a rapid production resin used to quickly try out designs and make parts with remarkable detail<br>
+    </p>
+    <h2>Contact Us</h2>
+    <p><em>If you have a question, call or email us, to get the answer you need and keep your project moving forward.</em><br></p>
+
+   
+  </div><!--testCol2-->
+</div><!--column--->
+</div> <!--container-->
+
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        © 2015 World Class Prototypes.
+      </div>
+      <div class="col-sm-6">
+        <ul class="social-icons">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa fa-github"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--/#footer-->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/mousescroll.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery.inview.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom-scripts.js"></script>
+
+</body>
+</html>
