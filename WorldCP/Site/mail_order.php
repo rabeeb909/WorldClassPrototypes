@@ -1,44 +1,64 @@
 <?php
-    if(isset($_POST['submit']))
-    {
-        //The form has been submitted, prep a nice thank you message
-        $output = '<h1>Thanks for your file and message!</h1>';
-        //Set the form flag to no display (cheap way!)
-        $flags = 'style="display:none;"';
+if(isset($_POST["Submit"])){
 
-        //Deal with the email
-        $to = 'me@example.com';
-        $subject = 'a file for you';
+$to = "anwarr@mail.gvsu.edu";
+$subject= "test attachment";
+$todayis = date("l, F j, Y, g:i a") ;
 
-        $message = strip_tags($_POST['message']);
-        $attachment = chunk_split(base64_encode(file_get_contents($_FILES['file1']['tmp_name'])));
-        $filename = $_FILES['file']['name'];
+$message = "
+Date : $todayis
+Contact Name : $contactName
+Company Name : $companyName
+Email : $email
+Phone Number : $phone
 
-        $boundary =md5(date('r', time())); 
+Process : $process
+Material : $material
+Quantity : $quantity
+Finish Level : $finishLevel
+Additional Infomation : $additionalInfo
+";
 
-        $headers = "From: webmaster@example.com\r\nReply-To: webmaster@example.com";
-        $headers .= "\r\nMIME-Version: 1.0\r\nContent-Type: multipart/mixed; boundary=\"_1_$boundary\"";
+$mime_boundary="==Multipart_Boundary_x".md5(mt_rand())."x";
+         $headers = "From: $email\r\n" .
+         "MIME-Version: 1.0\r\n" .
+            "Content-Type: multipart/mixed;\r\n" .
+            " boundary=\"{$mime_boundary}\"";
+         $message = "This is a multi-part message in MIME format.\n\n" .
+            "--{$mime_boundary}\n" .
+            "Content-Type: text/plain; charset=\"iso-8859-1\"\n" .
+            "Content-Transfer-Encoding: 7bit\n\n" .
+         $message . "\n\n";
+         foreach($_FILES as $userfile)
+         {
+            $tmp_name = $userfile['tmp_name'];
+            $type = $userfile['type'];
+            $name = $userfile['name'];
+            $size = $userfile['size'];
+            if (file_exists($tmp_name))
+            {
+               if(is_uploaded_file($tmp_name))
+               {
+                  $file = fopen($tmp_name,'rb');
+                  $data = fread($file,filesize($tmp_name));
+                  fclose($file);
+                  $data = chunk_split(base64_encode($data));
+               }
+               $message .= "--{$mime_boundary}\n" .
+                  "Content-Type: {$type};\n" .
+                  " name=\"{$name}\"\n" .
+                  "Content-Disposition: attachment;\n" .
+                  " filename=\"{$fileatt_name}\"\n" .
+                  "Content-Transfer-Encoding: base64\n\n" .
+               $data . "\n\n";
+            }
+         }
+         $message.="--{$mime_boundary}--\n";
+if (mail($to, $subject, $message, $headers))
+   echo "Mail sent successfully.";
+else
+   echo "Error in mail";
 
-        $message="This is a multi-part message in MIME format.
+}
 
---_1_$boundary
-Content-Type: multipart/alternative; boundary=\"_2_$boundary\"
-
---_2_$boundary
-Content-Type: text/plain; charset=\"iso-8859-1\"
-Content-Transfer-Encoding: 7bit
-
-$message
-
---_2_$boundary--
---_1_$boundary
-Content-Type: application/octet-stream; name=\"$filename\" 
-Content-Transfer-Encoding: base64 
-Content-Disposition: attachment 
-
-$attachment
---_1_$boundary--";
-
-        mail($to, $subject, $message, $headers);
-    }
 ?>
