@@ -1,0 +1,147 @@
+
+h2 {
+    font-family: open_sansregular, Arial, sans-serif;
+    color: #881d25;
+    font-size: 2em;
+    font-weight: lighter !important;
+    margin: 10px 0;
+}
+
+#fileupload {
+    padding: 15px 0 15px 50px;
+    border: #eaeaea 2px solid;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+#fileupload label {
+    margin: 0 5px 0 15px;
+    width: 25%;
+    text-align: right;
+}
+
+ftp-upload:70
+labe
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+input[type="file"] {
+    display: inline-block;
+}
+
+input[type="submit"] {
+    text-align: center;
+    margin: 0 0 10px 70px;
+    background: #1485cc;
+    color: #fff;
+    padding: 5px 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.info-box {
+    border: #eaeaea 2px solid;
+    background-color: #f9f9f9;
+    padding: 10px;
+    color: #aaa;
+    clear: both;
+}
+
+dd {
+    width: 60%px;
+    float: left;
+    margin: 0px 0 5px 10px;
+    text-align: left;
+}
+
+input {
+    line-height: normal;
+}
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input.text, input.title, textarea, select {
+    margin: 4px 0;
+    border: 1px solid #bbb;
+    width: 200px;
+}
+
+input.text {
+    padding: 4px;
+}
+
+form .red {
+    background: none;
+}
+
+.red {
+    background: #881d25;
+    color: #fff;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.userinput label {
+    clear: left;
+    padding: 2px 5px 0px 0px;
+    width: 200px;
+    text-align: right;
+    float: left;
+    margin: 4px 0 0 0;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+dt {
+    width: 35%;
+    text-align: right;
+    float: left;
+    margin: 4px 0 0 0;
+}
+
+form#sfUploadForm{
+    background: #eee;
+    margin: auto;
+    padding: 5px;
+}
+
+dt {
+    font-weight: 700;
+}
+
+dt, dd {
+    line-height: 1.42857143;
+}
+
+dl {
+    display: block;
+    width: 100%;
+    clear: both;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.userinput .red {
+    color: red;
+}
