@@ -18,7 +18,7 @@
 }
 
 body {
-  padding-top: 100px;
+  padding-top: 15em;
   background: #fff;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -141,7 +141,7 @@ ul.nostyle {
 }
 
 ul.nostyle i {
-  color: #45aed6;
+  color: #FFFFFF;
 }
 
 .scaleIn {
@@ -337,7 +337,7 @@ ul.nostyle i {
 }
 
 #hero-banner.banner-inner h2 > span {
-  color: #45aed6;
+  color: #FFFFFF;
 }
 
 #hero-banner.banner-inner .btn {
@@ -447,12 +447,12 @@ ul.nostyle i {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
@@ -473,7 +473,7 @@ ul.nostyle i {
 }
 
 #cta2 h2 > span {
-  color: #45aed6;
+  color: #FFFFFF;
 }
 
 #slides h2, #portfolio p {
@@ -862,7 +862,7 @@ ul.nostyle i {
 
 .nav.main-tab > li.active > a {
   background: #222534;
-  color: #45aed6;
+  color: #FFFFFF;
 }
 
 .nav.main-tab > li:first-child > a {
