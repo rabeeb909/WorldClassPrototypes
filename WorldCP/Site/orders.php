@@ -60,7 +60,7 @@
 
 <div class="container">
 <div class="orderinfo">
-<h3><?php include "mail)order.php"?></h3>
+<h3><?php include "mail_order.php"?></h3>
   <h2 style="color:red;">Request a Quote</h2>
   <p>Please start by filling in the form below, providing as much information as you can, such as the quantity, the type of material, nad any other important information you think we will need to know. Items marked with an * are required. If you are unsure which process should be used to build your parts, let us know the intended use so that we can help you select the apropriate process. If you have .jpgs, .bitmaps, or .pdfs that would help us understan your needs please include them as well.</p>
   <h3>
@@ -77,7 +77,7 @@
 
 
 <div class="col-md-6">
-<form id="sfUploadForm" enctype="mulipart/form-data" method="post" action="#">
+<form id="sfUploadForm" enctype="multipart/form-data" method="post" action="#">
   <div id="uploadFormContainer">
     <div class="userinput">
       <dl>
@@ -203,7 +203,7 @@
 <div class="info-box"> Files cannot exceed 2 GB<br></div>
 <div id="fileupload">
   <label>File1:</label>
-  <input type="file" name="attachFile1">
+  <input type="file" name="attachFile">
   <br>
    <label>File2:</label>
   <input type="file" name="attachFile2">
@@ -213,6 +213,9 @@
   <br>
  <label>File4:</label>
   <input type="file" name="attachFile4">
+  <br>
+ <label>File5:</label>
+  <input type="file" name="attachFile5">
   <br>
 
   <input type="submit" name="submit" value="Upload files">
