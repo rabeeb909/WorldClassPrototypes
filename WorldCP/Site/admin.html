@@ -1,0 +1,51 @@
+<head>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+                $('#loadButton').click(function() {
+            var file = document.getElementsByName("pages")[0].value;
+                    $.ajax({
+                        type: 'POST',
+                        url: 'php_file.php',
+                        data: 'req=load&fileName=' +file,
+                        success: function(result) {
+                            //alert(result);
+                            $('textarea').val(result);
+                        }
+                    });
+                });
+
+                $('#saveButton').click(function() {
+       var file = document.getElementsByName("pages")[0].value;
+                    var stuff = $('textarea').val();
+                    alert(stuff);
+                    $.ajax({
+                        type: 'POST',
+                        url: 'php_file.php',
+                        data: 'req=save&changes=' +stuff + '&fileName=' + file,
+	   
+                        success: function(result) {
+                            alert(result);
+                            //$('textarea').val(result);
+                        }
+                    });
+                });
+
+            }); //END $(document).ready()
+
+        </script>
+    </head>
+<html>
+    <body>
+      <h2>Change content on different Pages</h2>
+      <select name="pages">
+	<option value="files/contact.xml">Contact</option>
+	<option value="order.xml">Order</option>
+	</select>
+      <input type="button" value="Load Page" id="loadButton">
+        <input type="button" value="Save Changes" id="saveButton"/><br>
+        <textarea id='myText'  rows="30" cols="120" value='<?php echo $xml; ?>' />
+    </body>
+</html>
