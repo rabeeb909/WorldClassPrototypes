@@ -477,12 +477,12 @@ ul.nostyle i {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
@@ -543,13 +543,14 @@ ul.nostyle i {
 	font-weight: bold;
 }
 
-#features a {
-	color: #4A4A4A !important;
+#features .btn.btn-primary {
+	background-color: #488AC7 !important;
 }
 
-#features h2:hover {
-	background: #085C98;
+#features a {
+	color: #4A4A4A;
 }
+
 
 #features img {
 	padding-top: 20px;
@@ -996,7 +997,7 @@ ul.nostyle i {
   padding-bottom: 30px;
   color: #fff;
   background: #000;
-  margin-top: 30px; 
+  margin-top: 30px;
 }
 
 #footer a {

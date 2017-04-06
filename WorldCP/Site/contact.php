@@ -28,12 +28,12 @@
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
+          <span class="sr-only">Toggle navigation</span> 
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html"><img src="demo/logo.jpg" height = "70px" class = "img-rounded" style="display: inline-block;"></a>
+        <a class="navbar-brand" href="index.html"><span style="font-size: 35px;color: #FFF;line-height: 1em;font-weight: bold;">World Class Prototypes</span></a>
       </div>
 
       <div class="collapse navbar-collapse navbar-right">
@@ -59,15 +59,15 @@
 <section id="contact-us">
   <div class="container">
     <div class="section-header">
-      <strong><h2 class="section-title wow fadeInDown animated"
-          style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">Contact Us</h2></strong>
+      <h2 class="section-title wow fadeInDown animated"
+          style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">Contact Us</h2>
 
       <p class="wow fadeInDown animated"
          style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">We always welcome feedback. Below is our contact information and also a feedback form.<br></p>
     </div>
-<center><script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBNVLOeDktpd5jW1bfUdsW__zMNKOjUBK8'></script><div style='overflow:hidden;height:285px;width:722px;'><div id='gmap_canvas' style='height:285px;width:722px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://www.embedmap.net/'>google map embed</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=32e22ebb5eaa6f0046faeb6e4d0a426494d7c42e'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(42.804221,-86.10038350000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(42.804221,-86.10038350000002)});infowindow = new google.maps.InfoWindow({content:'<strong>World Class Prototypes, Inc.</strong><br>243 129th Avenue<br>49424 Holland<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBNVLOeDktpd5jW1bfUdsW__zMNKOjUBK8'></script><div style='overflow:hidden;height:285px;width:722px;'><div id='gmap_canvas' style='height:285px;width:722px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://www.embedmap.net/'>google map embed</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=32e22ebb5eaa6f0046faeb6e4d0a426494d7c42e'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(42.804221,-86.10038350000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(42.804221,-86.10038350000002)});infowindow = new google.maps.InfoWindow({content:'<strong>World Class Prototypes, Inc.</strong><br>243 129th Avenue<br>49424 Holland<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
   </div>
-</section></center>
+</section>
 <h3><?php include "feedback_email.php"?></h3>
 <section id="contact">
   <div class="container">
@@ -76,13 +76,10 @@
         <div class="col-sm-4 col-md-4">
           <div class="contact-form">
             <address>
-              <strong>World Class Prototypes, Inc.</strong><br><br>
+              <strong>World Class Prototypes, Inc.</strong><br>
               243 129th Avenue<br>
               Holland, MI 49424<br>
-			  <strong>AND</strong><br>
-			  915 East 32nd Street, Dock 13<br>
-			  Holland, MI 49424<br><br>
-              <abbr title="Phone">Phone:</abbr> (616)355-0200<br>
+              <abbr title="Phone">Phone:</abbr> (616)355-0200
 			  <abbr title="Phone">Fax:</abbr> (616)-355-2010
             </address>
           </div>
@@ -111,9 +108,7 @@
   </div>
 </section>
 <!--/#bottom-->
-
-
-
+	
 <footer id="footer">
   <div class="container">
     <div class="row">
