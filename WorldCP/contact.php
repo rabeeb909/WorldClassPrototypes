@@ -33,7 +33,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-		<a class="navbar-brand" href="index.html"><img src="demo/logo.jpg" class = "img-rounded" style="display: inline-block;"></a>
+        <a class="navbar-brand" href="index.html"><span style="font-size: 35px;color: #FFF;line-height: 1em;font-weight: bold;">World Class Prototypes</span></a>
       </div>
 
       <div class="collapse navbar-collapse navbar-right">
@@ -59,15 +59,11 @@
 <section id="contact-us">
   <div class="container">
     <div class="section-header">
-      <h1 class="section-title wow fadeInDown animated"
-          style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">Contact Us</h1>
+      <h2 class="section-title wow fadeInDown animated"
+          style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">Contact Us</h2>
 
       <p class="wow fadeInDown animated"
-<<<<<<< HEAD:WorldCP/contact.php
          style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;"><?php echo $xml->title; ?><br></p>
-=======
-         style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">Please fill out the form below if you have any questions or concerns for us and we will get back to you as soon as we can!  And if you would like to place an order click the "Request A Quote!" tab near the top right of the page! Have a great day!</p>
->>>>>>> b6ad46b2d0bfaae9ba08d02e9ea1d6d6f7dd21d1:WorldCP/Site/contact.html
     </div>
 <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBNVLOeDktpd5jW1bfUdsW__zMNKOjUBK8'></script><div style='overflow:hidden;height:285px;width:722px;'><div id='gmap_canvas' style='height:285px;width:722px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://www.embedmap.net/'>google map embed</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=32e22ebb5eaa6f0046faeb6e4d0a426494d7c42e'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(42.804221,-86.10038350000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(42.804221,-86.10038350000002)});infowindow = new google.maps.InfoWindow({content:'<strong>World Class Prototypes, Inc.</strong><br>243 129th Avenue<br>49424 Holland<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
   </div>
@@ -112,25 +108,9 @@
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	       <script src='google-sheet.js'></script>
           </div>
-		  
         </div>
       </div>
     </div>
-	
-<center><div id="map" style="width:600px;height:400px;"></center>
-  <script>
-  function myMap() {
-      var mapCanvas = document.getElementById("map");
-      var mapOptions = {
-          center: new google.maps.LatLng(51.5, -0.2),
-          zoom: 10
-      };
-      var map = new google.maps.Map(mapCanvas, mapOptions);
-  }
-  </script>
-
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-
   </div>
 </section>
 <!--/#bottom-->

@@ -447,12 +447,12 @@ ul.nostyle i {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
+  from {opacity: .4} 
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .4} 
   to {opacity: 1}
 }
 
@@ -738,16 +738,6 @@ ul.nostyle i {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0 8px;
-}
-
-#carousel-contain.col.left-col {
-    padding-right:0px;
-}
-#carousel-contain.col {
-    padding:0px;
-}
-#carousel-contain.col.right-col {
-    padding-left:0px;
 }
 
 #about {

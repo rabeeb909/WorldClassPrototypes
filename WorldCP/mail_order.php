@@ -1,9 +1,22 @@
 <?php
-if(isset($_POST["Submit"])){
+
+if(isset($_POST["submit"])){
 
 $to = "anwarr@mail.gvsu.edu";
 $subject= "test attachment";
 $todayis = date("l, F j, Y, g:i a") ;
+
+$contactName = $_POST["contactName"];
+$companyName = $_POST["companyName"];
+$email = $_POST["email"];
+$phone = $_POST["phone"];
+
+$process = $_POST["process"];
+$material = $_POST["material"];
+$quantity = $_POST["quantity"];
+$finishLevel = $_POST["finishLevel"];
+$additionalInfo = $_POST["additionalInfo"];
+
 
 $message = "
 Date : $todayis
@@ -16,7 +29,8 @@ Process : $process
 Material : $material
 Quantity : $quantity
 Finish Level : $finishLevel
-Additional Infomation : $additionalInfo
+Additional Info :
+	$additionalInfo
 ";
 
 $mime_boundary="==Multipart_Boundary_x".md5(mt_rand())."x";
@@ -48,8 +62,7 @@ $mime_boundary="==Multipart_Boundary_x".md5(mt_rand())."x";
                   "Content-Type: {$type};\n" .
                   " name=\"{$name}\"\n" .
                   "Content-Disposition: attachment;\n" .
-                  " filename=\"{$fileatt_name}\"\n" .
-                  "Content-Transfer-Encoding: base64\n\n" .
+                   "Content-Transfer-Encoding: base64\n\n" .
                $data . "\n\n";
             }
          }
@@ -59,6 +72,10 @@ if (mail($to, $subject, $message, $headers))
 else
    echo "Error in mail";
 
+
+
 }
+
+
 
 ?>
