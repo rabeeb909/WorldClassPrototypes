@@ -9,7 +9,8 @@ if (!(isset($user))) {
 
 if (isset($_POST['logout'])){
 	session_unset();
-	session_destory();
+	session_destroy();
+	header("Location: index.html");
 }
 ?>
 
@@ -106,7 +107,9 @@ if (isset($_POST['logout'])){
 <!--/header-->
 
     <div class="container">
-<button name="logout" style="float: right;">Logout<button>
+<form method="post">
+<input type="submit" name="logout" class="button" value="Log Out" style="float: right;">
+</form>
       <div class="row">
         <div class="col-sm-6">
 
