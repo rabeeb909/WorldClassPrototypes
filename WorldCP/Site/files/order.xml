@@ -1,10 +1,69 @@
 <order>
 
-<quote></quote>
+<quote>Please start by filling in the form below, providing as much information as you can, such as the quantity, the type of material, nad any other important information you think we will need to know. Items marked with an * are required. If you are unsure which process should be used to build your parts, let us know the intended use so that we can help you select the apropriate process. If you have .jpgs, .bitmaps, or .pdfs that would help us understand your needs please include them as well.</quote>
 
-<message></message>
+<errorMes>**If you are experiencing problems with the form, please contact us at (616)355-0200 to discuss your project.**<errorMes>
+
+<message>After uploading, you will see a message that your file submission was successful.</message>
+
+<proc1>Rapid Prototypes</proc1>
+
+<info1>Polyamide--PA: low moisture absorption, white, nylon
+Glass Filled--GF: temperature resistance, grey, 30% glass-filled nylon
+Alulon: machinable, metallic grey, PA & aluminum powder blend</info1>
+
+<proc2>Rapid Casting</proc2>
+
+<info2>Polyamide--PA: low moisture absorption, white, nylon
+Glass Filled--GF: temperature resistance, grey, 30% glass-filled nylon
+Alulon: machinable, metallic grey, PA & aluminum powder blend</info2>
+
+<proc3>Rotational Modeling</proc3>
+
+<info3>Polyamide--PA: low moisture absorption, white, nylon
+Glass Filled--GF: temperature resistance, grey, 30% glass-filled nylon
+Alulon: machinable, metallic grey, PA & aluminum powder blend</info3>
 
 
+<proc4>Vacuum Forming</proc4>
+
+<info4>Polyamide--PA: low moisture absorption, white, nylon
+Glass Filled--GF: temperature resistance, grey, 30% glass-filled nylon
+Alulon: machinable, metallic grey, PA & aluminum powder blend</info4>
+
+
+<proc5>Fiber Reinforced Composites</proc5>
+
+<info5>Polyamide--PA: low moisture absorption, white, nylon
+Glass Filled--GF: temperature resistance, grey, 30% glass-filled nylon
+Alulon: machinable, metallic grey, PA & aluminum powder blend</info5>
+
+
+<proc6>Production Nests and Fixtures</proc6>
+
+<info6>Polyamide--PA: low moisture absorption, white, nylon
+Glass Filled--GF: temperature resistance, grey, 30% glass-filled nylon
+Alulon: machinable, metallic grey, PA & aluminum powder blend</info6>
+
+<proc7>Injection Molding</proc7>
+
+<info7>Polyamide--PA: low moisture absorption, white, nylon
+Glass Filled--GF: temperature resistance, grey, 30% glass-filled nylon
+Alulon: machinable, metallic grey, PA & aluminum powder blend</info7>
+
+
+<proc8>CNC Machining</proc8>
+
+<info8>Polyamide--PA: low moisture absorption, white, nylon
+Glass Filled--GF: temperature resistance, grey, 30% glass-filled nylon
+Alulon: machinable, metallic grey, PA & aluminum powder blend</info8>
+
+
+<proc9>Modeling</proc9>
+
+<info9>Polyamide--PA: low moisture absorption, white, nylon
+Glass Filled--GF: temperature resistance, grey, 30% glass-filled nylon
+Alulon: machinable, metallic grey, PA & aluminum powder blend</info9>
 
 
 
