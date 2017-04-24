@@ -91,10 +91,10 @@ if (isset($_POST['logout'])){
 
       <div class="collapse navbar-collapse navbar-right">
         <ul class="nav navbar-nav">
-          <li class="scroll"><a href="index.html">Home</a></li>
-          <li class="scroll"><a href="about.html">About</a></li>
-          <li class="scroll"><a href="services.html">Services</a></li>
-          <li class="scroll"><a href="gallery.html">Gallery</a></li>
+          <li class="scroll"><a href="index.php">Home</a></li>
+          <li class="scroll"><a href="about.php">About</a></li>
+          <li class="scroll"><a href="services.php">Services</a></li>
+          <li class="scroll"><a href="gallery.php">Gallery</a></li>
           <li class="scroll"><a href="contact.php">Contact Us</a></li>
 		  <li class="scroll"><a href="orders.php">Request A Quote!</a></li>
         </ul>
@@ -117,6 +117,7 @@ if (isset($_POST['logout'])){
 			<h2>Change content on different Pages</h2>
 			<select name="pages">
 				<option value="files/blank.xml"></option>
+				<option value="files/index.xml">Main Page</option>
 				<option value="files/about.xml">About</option>
 				<option value="files/services.xml">Services</option>
 				<option value="files/gallery.xml">Gallery</option>
