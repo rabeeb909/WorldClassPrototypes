@@ -520,10 +520,6 @@ ul.nostyle i {
   margin-top: 80px;
 }
 
-#slides p {
-	font-weight: bold;
-}
-
 #features h2, #portfolio p {
   color: #4A4A4A;
 }
@@ -539,18 +535,27 @@ ul.nostyle i {
 }
 
 #features p {
-	color: #488AC7;
-	font-weight: bold;
+	color: black;
+  font-weight: normal;
+}
+
+#features p.wow.fadeInDown.animated {
+	color: black;
+  font-weight: normal;
 }
 
 #features .btn.btn-primary {
 	background-color: #488AC7 !important;
+  margin-bottom: 40px;
 }
 
 #features a {
 	color: #4A4A4A;
 }
 
+#features a:hover {
+  background-color: #488AC7;
+}
 
 #features img {
 	padding-top: 20px;
@@ -789,11 +794,14 @@ ul.nostyle i {
 
 #about {
   padding: 100px 0;
-  background: #EDEDED;
 }
 
 #about p {
-  font-weight: bold;
+  font-weight: normal;
+  color: #222534;
+}
+
+#about h3 {
   color: #488AC7;
 }
 
@@ -953,7 +961,7 @@ ul.nostyle i {
 
 
 #contact-us {
-  padding: 100px 0 10px;
+  padding: 100px 0 0px;
   background: #FFF;
 }
 
@@ -963,7 +971,7 @@ ul.nostyle i {
 
 /*Contact*/
 .contact-info {
-  padding: 60px 0;
+  padding: 10px 0;
 }
 
 .contact-info address {
@@ -976,6 +984,10 @@ ul.nostyle i {
 .contact-info .form-control {
   padding: 6px 12px;
   border-radius: 0;
+}
+
+#contact-us .contact-form .form-group .tr{
+  padding: 15px;
 }
 
 .business-stats:before {
@@ -1016,7 +1028,6 @@ ul.nostyle i {
 
 #footer ul > li {
   display: inline-block;
-
   border: 1px solid rgba(255, 255, 255, 0.09);
   padding: 3px 0;
   width: 31px;
@@ -1087,11 +1098,6 @@ ul.nostyle i {
     background: #FFF;
 }
 
-
-
-
-
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -1113,4 +1119,53 @@ ul.nostyle i {
 .desc {
     padding: 15px;
     text-align: center;
+}
+
+#order .panel-body {
+  font-weight: normal;
+}
+
+#order a {
+  font-weight: bold;
+}
+
+
+.error {
+    color: red;
+}
+
+.success {
+    color: #ff9966;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 80%;
+	padding: 0;
+	width: 90%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:92%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
 }

@@ -1,3 +1,6 @@
+<?php $xml=simplexml_load_file("files/about.xml") or die("Error: Cannot create object"); ?>
+
+
 <!DOCTYPE html>
 <html lang="en" class="csstransforms csstransforms3d csstransitions">
 <head>
@@ -32,17 +35,17 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html"><img src="demo/logo.jpg" height = "70px" class = "img-rounded" style="display: inline-block;"></a>
+        <a class="navbar-brand" href="index.php"><img src="demo/logo.jpg" height = "70px" class = "img-rounded" style="display: inline-block;"></a>
       </div>
 
       <div class="collapse navbar-collapse navbar-right">
         <ul class="nav navbar-nav">
-          <li class="scroll"><a href="index.html">Home</a></li>
-          <li class="scroll"><a href="about.html">About</a></li>
-          <li class="scroll"><a href="services.html">Services</a></li>
-          <li class="scroll"><a href="gallery.html">Gallery</a></li>
-          <li class="scroll"><a href="contact.html">Contact Us</a></li>
-		  <li class="scroll"><a href="orders.html">Request A Quote!</a></li>
+          <li class="scroll"><a href="index.php">Home</a></li>
+          <li class="scroll"><a href="about.php">About</a></li>
+          <li class="scroll"><a href="services.php">Services</a></li>
+          <li class="scroll"><a href="gallery.php">Gallery</a></li>
+          <li class="scroll"><a href="contact.php">Contact Us</a></li>
+		  <li class="scroll"><a href="orders.php">Request A Quote!</a></li>
 
         </ul>
       </div>
@@ -61,22 +64,10 @@
           style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">About Us</h1>
 
       <p class="wow fadeInDown animated"
-         style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+         style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;"><?php echo $xml->title; ?></p>
     </div>
 
-    <datalist id="process">
-      <option value="Stereolithography (SLA)">
-        <option value="High Resoultion Stereolithography (SLA Hi-Res)">
-  	<option value="Selective Laser sintering (SLS)">
-  	  <option value="Fused Deposition Modeling (FDM)">
-  	    <option value="Object/Polyjetting">
-  	      <option value="ZCorp Binder Jetting">
-  		<option value="Cast Urethane">
-  		  <option value="CNC Machining">
-  		    <option value="Continuous Liquid Interface Production (CLIP)">
-  		      <option value="Unsure-please recommend">
-  			</datalist>
+
 
     <div class="row">
       <div class="col-sm-6 wow fadeInLeft animated"
@@ -88,19 +79,10 @@
         style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">
         <h3 class="column-title">Our Company</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis
-          mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu
-          eleifend ipsum.</p>
-
-        <p>Nulla eu neque commodo, dapibus dolor eget, dictum arcu. In nec purus eu tellus consequat ultricies. Donec
-          feugiat tempor turpis, rutrum sagittis mi venenatis at. Sed molestie lorem a blandit congue. Ut pellentesque
-          odio quis leo volutpat, vitae vulputate felis condimentum. </p>
-
-        <p>Praesent vulputate fermentum lorem, id rhoncus sem vehicula eu. Quisque ullamcorper, orci adipiscing auctor
-          viverra, velit arcu malesuada metus, in volutpat tellus sem at justo.</p>
+        <p><?php echo $xml->description; ?></p>
 
 
-        <a class="btn btn-primary" href="services.html">Learn More</a>
+        <a class="btn btn-primary" href="services.php">Learn More</a>
 
       </div>
     </div>

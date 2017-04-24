@@ -1,3 +1,5 @@
+<?php $xml=simplexml_load_file("files/services.xml") or die("Error: Cannot create object"); ?>
+
 <!DOCTYPE html>
 <html lang="en" class="csstransforms csstransforms3d csstransitions">
 <head>
@@ -32,17 +34,17 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html"><img src="demo/logo.jpg" height = "70px" class = "img-rounded" style="display: inline-block;"></a>
+        <a class="navbar-brand" href="index.php"><img src="demo/logo.jpg" height = "70px" class = "img-rounded" style="display: inline-block;"></a>
       </div>
 
       <div class="collapse navbar-collapse navbar-right">
         <ul class="nav navbar-nav">
-          <li class="scroll"><a href="index.html">Home</a></li>
-          <li class="scroll"><a href="about.html">About</a></li>
-          <li class="scroll"><a href="#services">Services</a></li>
-          <li class="scroll"><a href="gallery.html">Gallery</a></li>
-          <li class="scroll"><a href="contact.html">Contact Us</a></li>
-		  <li class="scroll"><a href="orders.html">Request A Quote!</a></li>
+          <li class="scroll"><a href="index.php">Home</a></li>
+          <li class="scroll"><a href="about.php">About</a></li>
+          <li class="scroll"><a href="services.php">Services</a></li>
+          <li class="scroll"><a href="gallery.php">Gallery</a></li>
+          <li class="scroll"><a href="contact.php">Contact Us</a></li>
+		  <li class="scroll"><a href="orders.php">Request A Quote!</a></li>
         </ul>
       </div>
     </div>
@@ -60,8 +62,8 @@
 
       <p class="wow fadeInDown animated"
          style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">
-		 World Class Prototypes is a company that is here to provide your company with prototyping needs.  Below we have a list of what we do and a brief description of what each type of prototyping does and how it is different from the others.  To get more information simply click on the specific name and you will be directed to a more in-depth look.
-	</p>
+         <?php echo $xml->top; ?>
+       </p>
     </div>
 
 
@@ -74,15 +76,14 @@
 			<div class="col-md-6">
 			<!-- First box -->
 				<div class="section-header">
-					<h2 class="section-title wow fadeInDown animated">Modeling</h2>
+					<h2 class="section-title wow fadeInDown animated"><a href="modeling.html">Modeling</h2></a>
 
 							<!-- Services -->
 
 					<p class="wow fadeInDown animated">
-						Here at World Class Prototypes, we do a wide variety of modeling many different parts within many different industries.  The different kinds of modeling World Class Prototypes does are functional models, scale models, finish work and painting, pre-production assembly and architectural models.
+            <?php echo $xml->modeling; ?>
 					</p>
 					<!-- ><img src="demo/ModelingPictures/Model1.jpg" height="175px" width="175px"> -->
-					<center><a class="btn btn-primary" href="modeling.html"><strong>Click here to view more!</a></center><strong>
 
 					<!-- navbar-right-->
 					</div>
@@ -96,18 +97,17 @@
 			<div class="col-md-6">
 			<!-- Second box -->
 			<div class="section-header">
-				<h2 class="section-title wow fadeInDown animated">Rapid Casting</h2>
+				<h2 class="section-title wow fadeInDown animated"><a href="rapidcasting.html">Rapid Casting</h2></a>
 
 				<p class="wow fadeInDown animated">
-				The materials available offer a range of structural integretity ranging from a soft sponge to as hard as wood. This type of service is limited to your imagination! We have done a variety of different projects in rapid casting so let us know your needs today! Click below check to see some of our work!
+          <?php echo $xml->rapidC; ?>
 				</p>
 
 				<!-- <img src="demo/RapidPrototypesPictures/rapid4.jpg" height="175px" width="175px"> -->
-				<center><a class="btn btn-primary" href="rapidcasting.html"><strong>Click here to view more!</a></center><strong>
 
 			</div>
 		</div>
-	</div>
+  </div>
 </div>
 </a>
 
@@ -119,12 +119,11 @@
 					<div class="col-sm-6">
 			<!-- First box -->
 			<div class="section-header">
-				<h2 class="section-title wow fadeInDown animated">Rapid Prototypes</h2>
-				<p class="fadeInDown animated"
-				 style="visibility: visible;">
-				 Rapid Prototyping: The secret to the technology is 16 micron layers built in as little as six seconds! The high resolution of the print head and the small layer thickness in the build process offers highly detailed and accurate prototypes.
+				<h2 class="section-title wow fadeInDown animated"><a href="rapidproto.html">Rapid Prototypes</h2></a>
+
+          <p class="wow fadeInDown animated">
+            <?php echo $xml->rapidP; ?>
 			 </p>
-       <center><a class="btn btn-primary" href="rapidproto.html"><strong>Click here to view more!</a></center><strong>
 			</div>
 			</div>
 	</a>
@@ -135,12 +134,11 @@
 
 			<!-- Second box -->
 			<div class="section-header">
-				<h2 class="section-title wow fadeInDown animated">CNC Machining</h2>
+				<h2 class="section-title wow fadeInDown animated"><a href="cnc.html">CNC Machining</h2></a>
 
 				<p class="wow fadeInDown animated">
-				World Class Prototypes can offer CNC milling, CNC lathe and CNC routing of most metals, plastics and foams available. From production tooling to one-off prototypes, World Class Prototypes would like to be your source for machining.
+          <?php echo $xml->cnc; ?>
 			</p>
-      <center><a class="btn btn-primary" href="cnc.html"><strong>Click here to view more!</a></center><strong>
 		</div>
 		</div>
 		</a>
@@ -156,12 +154,11 @@
 				<div class="col-sm-6">
 				<!-- First box -->
 				<div class="section-header">
-					<h2 class="section-title wow fadeInDown animated">Rotational Molding</h2>
-					<p class="fadeInDown animated"
-					 style="visibility: visible;">
-					 Rotational molding is a cost effective way to produce hollow parts such as liquid tanks or hollow containers.  World Class Prototypes has developed a proprietary system for producing rotational molded prototype parts at room temperature, as well as conventional oven curing.
+					<h2 class="section-title wow fadeInDown animated"><a href="rotational.html">Rotational Molding</h2></a>
+
+          <p class="wow fadeInDown animated">
+            <?php echo $xml->rotational; ?>
 				</p>
-        <center><a class="btn btn-primary" href="rotational.html"><strong>Click here to view more!</a></center><strong>
 			</div>
 		</div>
 	</a>
@@ -171,13 +168,12 @@
 
 				<!-- Second box -->
 				<div class="section-header">
-					<h2 class="section-title wow fadeInDown animated">Vacuum Forming</h2>
+					<h2 class="section-title wow fadeInDown animated"><a href="vacuum.html">Vacuum Forming</h2></a>
 
 					<p class="wow fadeInDown animated"
 					 style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">
-					 Vacuum forming consists of heating a flat sheet of thermoplastic to a softened state. The sheet is then drawn down over a mold with the assistance of vacuum and sometimes air pressure. After the plastic is cooled the part is removed and trimmed.
+           <?php echo $xml->vacuum; ?>
 				</p>
-        <center><a class="btn btn-primary" href="vacuum.html"><strong>Click here to view more!</a></center><strong>
 			</div>
 			</div>
 			</a>
@@ -194,12 +190,11 @@
 					<div class="col-sm-6">
 					<!-- First box -->
 					<div class="section-header">
-						<h2 class="section-title wow fadeInDown animated">Fiber Composites</h2>
-						<p class="fadeInDown animated"
-						 style="visibility: visible;">
-						 WCP provides product design, tool design, and production applications in composite materials. World Class Prototypes has capabilities to produce tooling and parts from simple lay-ups to complex, including pre-pregs and vacuum bagging.
+						<h2 class="section-title wow fadeInDown animated"><a href="fiber.html">Fiber Composites</h2></a>
+
+            <p class="wow fadeInDown animated">
+              <?php echo $xml->fiber; ?>
 					</p>
-          <center><a class="btn btn-primary" href="fiber.html"><strong>Click here to view more!</a></center><strong>
 				</div>
 				</div>
 			</a>
@@ -209,13 +204,12 @@
 
 					<!-- Second box -->
 					<div class="section-header">
-						<h2 class="section-title wow fadeInDown animated">Injection Molding</h2>
+						<h2 class="section-title wow fadeInDown animated"><a href="injection.html">Injection Molding</h2></a>
 
 						<p class="wow fadeInDown animated"
 						 style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">
-						 World Class Prototypes has worked to develop fast turnaround prototype tooling methods for low cost injection molded products. Now World Class Prototypes can offer production intent parts at a fraction of the cost of production tooling.
+             <?php echo $xml->injection; ?>
 					</p><br>
-          <center><a class="btn btn-primary" href="injection.html"><strong>Click here to view more!</a></center><strong>
 				</div>
 				</div>
 				</a>
@@ -232,18 +226,19 @@
 					<div class="col-sm-6">
 					<!-- First box -->
 					<div class="section-header">
-						<h2 class="section-title wow fadeInDown animated">Production Nests And Fixtures</h2>
-						<p class="fadeInDown animated"
-						 style="visibility: visible;">
-						 World Class Prototypes specializes in nests and fixtures for production assembly. Urethane nests offer many unique properties. Along with all the unique properties that we provide with urethane nests, World Class Prototypes also offers 8 different types of nests and fixtures for you.
+						<h2 class="section-title wow fadeInDown animated"><a href="nestsandfixtures.html">Production Nests And Fixtures</h2></a>
+
+            <p class="wow fadeInDown animated">
+              <?php echo $xml->nests; ?>
 					</p>
-          <center><a class="btn btn-primary" href="nestsandfixtures.html"><strong>Click here to view more!</a></center><strong>
 				</div>
 			</div>
 		</a>
 	</div>
 </div>
 </div>
+</section>
+
 
 <footer id="footer">
   <div class="container">
@@ -253,7 +248,7 @@
       </div>
       <div class="col-sm-6">
         <ul class="social-icons">
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.google.com"><i class="fa fa-facebook"></i></a></li>
           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
           <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
           <li><a href="#"><i class="fa fa-linkedin"></i></a></li>

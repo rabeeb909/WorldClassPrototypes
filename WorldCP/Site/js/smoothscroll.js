@@ -293,11 +293,3 @@ var ssc_uniqueID = function () {
     return t.ssc_uniqueID || (t.ssc_uniqueID = e++)
   }
 }();
-
-var ischrome = /chrome/.test(navigator.userAgent.toLowerCase());
-
-if (ischrome) {
-  ssc_addEvent("mousedown", ssc_mousedown);
-  ssc_addEvent("mousewheel", ssc_wheel);
-  ssc_addEvent("load", ssc_init)
-}

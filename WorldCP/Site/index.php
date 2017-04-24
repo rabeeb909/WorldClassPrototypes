@@ -1,3 +1,4 @@
+<?php $xml=simplexml_load_file("files/index.xml") or die("Error: Cannot create object"); ?>
 
 <!DOCTYPE html>
 <html lang="en" class="csstransforms csstransforms3d csstransitions">
@@ -33,7 +34,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php"><img src="demo/logo.jpg" height = "70px" class = "img-rounded" style="display: inline-block;"></a>
+		<a class="navbar-brand" href="index.php"><img src="demo/logo.jpg" height = "70px" class = "img-rounded" style="display: inline-block;"></a>
       </div>
 
       <div class="collapse navbar-collapse navbar-right">
@@ -53,49 +54,52 @@
 </header>
 <!--/header-->
 
+<section id="hero-banner">
+  <div class="banner-inner">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+		 <!-- <img src="shop.jpg" alt="" style="width:1200px;height:670px;"> -->
+          <h2><span>World Class Prototypes</span></h2>
+          <p><span>We will make the prototyping process easy for you!</span></p>
+          <a class="btn btn-primary btn-lg" href="about.html"><span>Learn More</span></a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/#main-slider-->
+
+
+
 <section id="slides">
   <div class="container">
     <div class="section-header">
       <h2 class="section-title wow fadeInDown animated"
-          style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">Production Nests and Fixtures</h2>
+          style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">What We Do For You</h2>
 
       <p class="wow fadeInDown animated"
-         style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">World Class Prototypes specializes in nests and fixtures for production assembly. Urethane nests offer many unique properties.  Here are just some of the unique properties we provide with urethane nests: <br>
-
-		<ul>
-			<li>Scratch resistant nests for delicate surfaces</li>
-			<li>Alignment fixtures for assembly</li>
-			<li>Check fixtures</li>
-			<li>Sonic welding nests</li>
-			<li>Robotic end of arm fixtures</li>
-			<li>Fabric wrap assist fixtures</li>
-			<li>Hand load assist tools</li>
-			<li>Validation test fixtures</li>
-		</ul>
-	</p>
-
+         style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;"><?php echo $xml->description; ?></p>
     </div>
-
-	<center><a class="btn btn-primary" href="orders.php">Click here to Get a Quote!</a></center>
-
 
 	<div class="slideshow-container">
 	  <div class="mySlides fade">
 	    <div class="numbertext">1 / 3</div>
-	    <img src="demo/ProductionNFPictures/ProductionNF3.jpg" style="width:100%" height="450px">
-	    <strong><div class="text">PRODUCTION 1</div></strong>
+	    <a href="cnc.html"><img src="demo/CNCPictures/cnc1.jpg" style="width:100%" height="450px"></a>
+	    <strong><div class="text">CNC MACHINING</div></strong>
 	  </div>
 
 	  <div class="mySlides fade">
 	    <div class="numbertext">2 / 3</div>
 	    <img src="demo/ProductionNFPictures/ProductionNF6.jpg" style="width:100%" height="450px">
-	    <strong><div class="text">PRODUCTION 2</div></strong>
+	    <strong><div class="text">PRODUCTION FIXTURES AND NESTS</div></strong>
 	  </div>
 
 	  <div class="mySlides fade">
 	    <div class="numbertext">3 / 3</div>
-	    <img src="demo/ProductionNFPictures/ProductionNF2.jpg" style="width:100%" height="450px">
-	    <strong><div class="text">PRODUCTION 3</div></strong>
+	    <img src="demo/RotomoldPictures/Rotomold3.jpg" style="width:100%" height="450px">
+	    <strong><div class="text">ROTATIONAL MOLDING</div></strong>
 	  </div>
 
 	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -108,6 +112,10 @@
 	  <span class="dot" onclick="currentSlide(2)"></span>
 	  <span class="dot" onclick="currentSlide(3)"></span>
 	</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
 

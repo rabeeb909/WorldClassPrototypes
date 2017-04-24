@@ -1,3 +1,5 @@
+<?php $xml=simplexml_load_file("files/gallery.xml") or die("Error: Cannot create object"); ?>
+
 <!DOCTYPE html>
 <html lang="en" class="csstransforms csstransforms3d csstransitions">
 <head>
@@ -32,17 +34,17 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html"><img src="demo/logo.jpg" height = "70px" class = "img-rounded" style="display: inline-block;"></a>
+        <a class="navbar-brand" href="index.php"><img src="demo/logo.jpg" height = "70px" class = "img-rounded" style="display: inline-block;"></a>
       </div>
 
       <div class="collapse navbar-collapse navbar-right">
         <ul class="nav navbar-nav">
-          <li class="scroll"><a href="index.html">Home</a></li>
-          <li class="scroll"><a href="about.html">About</a></li>
-          <li class="scroll"><a href="services.html">Services</a></li>
-          <li class="scroll"><a href="gallery.html">Gallery</a></li>
-          <li class="scroll"><a href="contact.html">Contact Us</a></li>
-		  <li class="scroll"><a href="orders.html">Request A Quote!</a></li>
+          <li class="scroll"><a href="index.php">Home</a></li>
+          <li class="scroll"><a href="about.php">About</a></li>
+          <li class="scroll"><a href="services.php">Services</a></li>
+          <li class="scroll"><a href="gallery.php">Gallery</a></li>
+          <li class="scroll"><a href="contact.php">Contact Us</a></li>
+		  <li class="scroll"><a href="orders.php">Request A Quote!</a></li>
         </ul>
       </div>
     </div>
@@ -59,9 +61,9 @@
           style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">Our Gallery</h1>
 
       <p class="wow fadeInDown animated"
-         style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;"><strong>Here are some of our previous projects that
-       we have done in the past! If you see a project you like don't be afraid to get ahold of us and we can make your prototype wants a
-     reality!</p></strong>
+         style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">
+         <?php echo $xml->description; ?>
+       </p>
     </div>
 
     <div class="portfolio-items isotope" style="position: relative; overflow: hidden; height: 400px;">
@@ -73,7 +75,7 @@
           <div class="portfolio-info">
             <h3><font color="white">CNC Project</font></h3>
             Old CNC Project part
-            <a class="preview" href="demo/CNCPictures/cnc1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+            <a class="preview" href="project1.html" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
           </div>
         </div>
       </div>
@@ -184,7 +186,7 @@
 
 
 
-
+<!--/#footer-->
 <footer id="footer">
   <div class="container">
     <div class="row">

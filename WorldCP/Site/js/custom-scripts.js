@@ -2,8 +2,9 @@ jQuery(function ($) {
   'use strict';
 
   $(window).scroll(function (event) {
-    Scroll();
-  });
+     Scroll();
+   });
+
 
   $('.navbar-collapse ul li a').on('click', function () {
     $('html, body').animate({
@@ -30,12 +31,14 @@ jQuery(function ($) {
       }
     })
   };
-  
+
+
+
   $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').focus()
   })
-   
-  
+
+
   var slideIndex = 0;
   showSlides();
 
@@ -43,14 +46,14 @@ jQuery(function ($) {
       var i;
       var slides = document.getElementsByClassName("mySlides");
       for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none"; 
+          slides[i].style.display = "none";
       }
       slideIndex++;
-      if (slideIndex> slides.length) {slideIndex = 1} 
-      slides[slideIndex-1].style.display = "block"; 
+      if (slideIndex> slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
       setTimeout(showSlides, 4000); // Change image every 4 seconds
   }
-  
+
 
   $('#tohash').on('click', function () {
     $('html, body').animate({
@@ -133,3 +136,47 @@ jQuery(function ($) {
 
 
 });
+
+function initialize()
+{
+    var latlng = new google.maps.LatLng(42.770943,-86.072392);
+    var latlng2 = new google.maps.LatLng(42.804221,-86.100384);
+    var myOptions =
+    {
+        zoom: 15,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+    var myOptions2 =
+    {
+        zoom: 15,
+        center: latlng2,
+        mapTypeId: google.maps.MapTypeId.ROAPMAP
+    };
+
+    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+    var map2 = new google.maps.Map(document.getElementById("map_canvas_2"), myOptions2);
+
+
+
+    var myMarker = new google.maps.Marker(
+    {
+        position: latlng,
+        map: map,
+        fontWeight: 'bold',
+        label: 'WCP Location 1',
+   });
+
+    var myMarker2 = new google.maps.Marker(
+    {
+        position: latlng2,
+        map: map2,
+        fontWeight: 'bold',
+        label: 'WCP Location 2',
+
+    });
+
+
+}

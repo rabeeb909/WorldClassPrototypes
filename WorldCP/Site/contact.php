@@ -1,3 +1,4 @@
+<?php $xml=simplexml_load_file("files/contact.xml") or die("Error: Cannot create object"); ?>
 
 <!DOCTYPE html>
 <html>
@@ -28,22 +29,22 @@
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span> 
+          <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html"><span style="font-size: 35px;color: #FFF;line-height: 1em;font-weight: bold;">World Class Prototypes</span></a>
+        <a class="navbar-brand" href="index.php"><img src="demo/logo.jpg" height = "70px" class = "img-rounded" style="display: inline-block;"></a>
       </div>
 
       <div class="collapse navbar-collapse navbar-right">
         <ul class="nav navbar-nav">
-          <li class="scroll"><a href="index.html">Home</a></li>
-          <li class="scroll"><a href="about.html">About</a></li>
-          <li class="scroll"><a href="services.html">Services</a></li>
-          <li class="scroll"><a href="gallery.html">Gallery</a></li>
-          <li class="scroll"><a href="contact.html">Contact Us</a></li>
-		  <li class="scroll"><a href="orders.html">Request A Quote!</a></li>
+          <li class="scroll"><a href="index.php">Home</a></li>
+          <li class="scroll"><a href="about.php">About</a></li>
+          <li class="scroll"><a href="services.php">Services</a></li>
+          <li class="scroll"><a href="gallery.php">Gallery</a></li>
+          <li class="scroll"><a href="contact.php">Contact Us</a></li>
+		  <li class="scroll"><a href="orders.php">Request A Quote!</a></li>
         </ul>
       </div>
     </div>
@@ -55,60 +56,114 @@
 
 
 <!--/#contact-us-->
-
 <section id="contact-us">
   <div class="container">
     <div class="section-header">
       <h2 class="section-title wow fadeInDown animated"
           style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">Contact Us</h2>
 
-      <p class="wow fadeInDown animated"
-         style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">We always welcome feedback. Below is our contact information and also a feedback form.<br></p>
-    </div>
-<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBNVLOeDktpd5jW1bfUdsW__zMNKOjUBK8'></script><div style='overflow:hidden;height:285px;width:722px;'><div id='gmap_canvas' style='height:285px;width:722px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://www.embedmap.net/'>google map embed</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=32e22ebb5eaa6f0046faeb6e4d0a426494d7c42e'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(42.804221,-86.10038350000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(42.804221,-86.10038350000002)});infowindow = new google.maps.InfoWindow({content:'<strong>World Class Prototypes, Inc.</strong><br>243 129th Avenue<br>49424 Holland<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-  </div>
-</section>
-<h3><?php include "feedback_email.php"?></h3>
-<section id="contact">
-  <div class="container">
-    <div class="container contact-info">
-      <div class="row">
-        <div class="col-sm-4 col-md-4">
-          <div class="contact-form">
-            <address>
-              <strong>World Class Prototypes, Inc.</strong><br>
-              243 129th Avenue<br>
-              Holland, MI 49424<br>
-              <abbr title="Phone">Phone:</abbr> (616)355-0200
-			  <abbr title="Phone">Fax:</abbr> (616)-355-2010
-            </address>
-          </div>
-        </div>
-        <div class="col-sm-8 col-md-8">
-          <div class="contact-form">
-            <form id="main-contact-form" name="contact-form" method="post" action="#">
-              <div class="form-group">
-                <input type="text" name="vname" class="form-control" placeholder="Name" required="">
-              </div>
-              <div class="form-group">
-                <input type="text" name="vemail" class="form-control" placeholder="Email" required="">
-              </div>
-              <div class="form-group">
-                <input type="text" name="sub" class="form-control" placeholder="Subject" required="">
-              </div>
-              <div class="form-group">
-                <textarea name="msg" class="form-control" rows="8" placeholder="Message" required=""></textarea>
-              </div>
-              <button type="submit" name="submit" class="btn btn-primary">Send Message</button>
-            </form>
-          </div>
-        </div>
-      </div>
+          <p class="wow fadeInDown animated"
+             style="visibility: visible; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;"><?php echo $xml->title; ?></p>
     </div>
   </div>
+
+    <section id="contact">
+      <div class="container">
+        <div class="container contact-info">
+
+              <div class="contact-form">
+                <center>
+                <?php include('feedback_email.php'); ?>
+                <link rel="stylesheet" href="form.css" type="text/css">
+                <div class="container">
+                  <form id="contact" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
+                    <fieldset>
+                      <input placeholder="Your name" type="text" name="name" value="<?= $name ?>" tabindex="1" autofocus>
+                      <span class="error"><?= $name_error ?></span>
+                    </fieldset>
+                    <fieldset>
+                      <input placeholder="Your Email Address" type="text" name="email" value="<?= $email ?>" tabindex="2">
+                      <span class="error"><?= $email_error ?></span>
+                    </fieldset>
+                    <fieldset>
+                      <input placeholder="Your Phone Number" type="text" name="phone" value="<?= $phone ?>" tabindex="3">
+                      <span class="error"><?= $phone_error ?></span>
+                    </fieldset>
+                    <fieldset>
+                      <textarea value="<?= $message ?>" placeholder="Message" name="message" tabindex="5">
+                      </textarea>
+                    </fieldset>
+                    <fieldset>
+                      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                    </fieldset>
+                    <div class="success"><?= $success ?></div>
+                  </form>
+                </div></center>
+
+
+
+
+            </div>
+          </div>
+
+          <h3><center>Locate both of our shops by using the maps below!</center></h3><br><br>
+
+          <div class="row">
+            <div class="col-sm-6">
+
+                <address>
+                  <center><strong>World Class Prototypes, Inc.</strong><br><br>
+                  915 East 32nd Street, Dock 13<br>
+                  Holland, MI 49424<br><br>
+                  <abbr title="Phone">Phone:</abbr> (616)355-0200<br>
+                  <abbr title="Phone">Fax:</abbr> (616)-355-2010</center>
+                </address>
+              </div>
+    			   <div class="col-sm-6">
+               <address>
+                 <center><strong>World Class Prototypes, Inc.</strong><br><br>
+                 243 129th Avenue<br>
+                 Holland, MI 49424<br><br>
+                 <abbr title="Phone">Phone:</abbr> (616)355-0200<br>
+                <abbr title="Phone">Fax:</abbr> (616)-355-2010</center>
+               </address>
+              </div>
+            </div>
+
+        </div>
+
+    </div>
+    </section>
+    <!--/#bottom-->
+
+
+      <div class="container">
+        <div class"row">
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyCSnkABOjFtctcXVyw0DYXJQ0dz08RBJyE">
+</script>
+<script type="text/javascript">
+</script>
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyDsjE7f0XVaRhy6bh3Bar3UhJZasbJ6xUQ">
+</script>
+<script type="text/javascript">
+</script>
+
+<body onload="initialize()">
+<div class="col-sm-6">
+<title>WCP Location 1</title>
+<div id="map_canvas" style="top: 10px; left: 25px; width:410px; height:375px; float: center"></div>
+</div>
+<div class="col-sm-6">
+<title>WCP Location 2</title>
+<div id="map_canvas_2" style="top: 10px; left: 75px; width:410px; height:375px"></div>
+</div>
+</body>
+</div>
+</div>
 </section>
-<!--/#bottom-->
-	
+
+
 <footer id="footer">
   <div class="container">
     <div class="row">
