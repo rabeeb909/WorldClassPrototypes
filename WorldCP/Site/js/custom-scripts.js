@@ -32,7 +32,10 @@ jQuery(function ($) {
   };
   
   
-  
+       $('#myModel').on('shown.bs.model',function() {
+       $('#myInput').focus()
+       
+       })
   
   
   var slideIndex = 0;

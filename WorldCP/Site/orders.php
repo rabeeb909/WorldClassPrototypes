@@ -54,6 +54,11 @@
   <!--/nav-->
 </header>
 <!--/header-->
+
+
+
+
+
 <div>
   <h4></h4>
 </div>
@@ -61,6 +66,7 @@
 <div class="container">
 <div class="orderinfo">
 <h3><?php include "mail_order.php"?></h3>
+
   <h2 style="color:red;">Request a Quote</h2>
   <p>Please start by filling in the form below, providing as much information as you can, such as the quantity, the type of material, nad any other important information you think we will need to know. Items marked with an * are required. If you are unsure which process should be used to build your parts, let us know the intended use so that we can help you select the apropriate process. If you have .jpgs, .bitmaps, or .pdfs that would help us understan your needs please include them as well.</p>
   <h3>
@@ -87,7 +93,7 @@
 
 
 <div class="col-md-6">
-<form id="sfUploadForm" enctype="multipart/form-data" method="post" action="#">
+<form id="foo" enctype="multipart/form-data" method="post" action="">
   <div id="uploadFormContainer">
     <div class="userinput">
       <dl>
@@ -137,130 +143,48 @@
   </dl>
 
 <div class="ccms_form_element cfdiv_custom" id="style_container_div">
-<label>Process: </label><select size="1" id="Rank" class=" validate['required']" title="" type="select" name="Rank" value="-Select Your Rank-">
-    <optgroup label="-Select Process-">
-    <option value="rapid">Rapid Prototypes</option>
-    <option value="casting">Rapids Casting</option>
-    <option value="rotational">Rotational Modeling</option>
-    <option value="vacuum">Vacuum Forming</option>
-    <option value="fiber">Fiber Reinforced Composites</option>
-    <option value="nests">Production Nests and Fixtures</option>
-    <option value="injection">Injection Molding</option>
-    <option value="cnc">CNC Machining</option>
-    <option value="model">Modeling</option>
-    <option value="other">Unsure-please recommend</option>
- </optgroup>
-</select><div class="clear"></div><div id="error-message-style"></div></div>
+  <label>Process: </label><select size="1" id="Rank" class=" validate['required']" title="" type="select" name="process" value="-Select Your Rank-">
+        <optgroup label="-Select Process-">
+	      <option value="rapid">Rapid Prototypes</option>
+	          <option value="casting">Rapids Casting</option>
+		      <option value="rotational">Rotational Modeling</option>
+		          <option value="vacuum">Vacuum Forming</option>
+			      <option value="fiber">Fiber Reinforced Composites</option>
+			          <option value="nests">Production Nests and Fixtures</option>
+				      <option value="injection">Injection Molding</option>
+				          <option value="cnc">CNC Machining</option>
+					      <option value="model">Modeling</option>
+					          <option value="other">Unsure-please recommend</option>
+						   </optgroup>
+	</select><div class="clear"></div><div id="error-message-style"></div></div>
 
 <div id="rapid"  class="style-sub-1"  style="display: none;" name="stylesub1" onchange="ChangeDropdowns(this.value)">
-  <label>Material: </label>
-    <select id="Rapid Prototypes" name="Rapid Prototypes">
-      <option value="">-Choose A Material-</option>
-      <option value="Basic Ore Miner - Level 1a">Rapid Prototypes 1</option>
-      <option value="Basic Ore Miner - Level 2a">Rapid Prototypes 2</option>
-      <option value="Basic Ore Miner - Level 3a">Rapid Prototypes 3</option>
-      <option value="Basic Ore Miner - Level 4a">Rapid Prototypes 4</option>
-      <option value="Basic Ore Miner - Level 5a">Rapid Prototypes 5</option>
-        </select>
-  </div>
+    <label>Material: </label>
+        <select id="Rapid Prototypes" name="Rapid Prototypes">
+	        <option value="">-Choose A Material-</option>
+		      <option value="Basic Ore Miner - Level 1a">Rapid Prototypes 1</option>
+		            <option value="Basic Ore Miner - Level 2a">Rapid Prototypes 2</option>
+			          <option value="Basic Ore Miner - Level 3a">Rapid Prototypes 3</option>
+				        <option value="Basic Ore Miner - Level 4a">Rapid Prototypes 4</option>
+					      <option value="Basic Ore Miner - Level 5a">Rapid Prototypes 5</option>
+					        </select>
+	  </div>
 
   <div id="casting"  class="style-sub-1"  style="display: none;" name="stylesub1" onchange="ChangeDropdowns(this.value)">
-    <label>Material: </label>
-      <select id="Rapids Casting" name="Rapids Casting">
-        <option value="">-Choose A Material</option>
-        <option value="Basic Ore Miner - Level 1a">Rapids Casting 1</option>
-        <option value="Basic Ore Miner - Level 2a">Rapids Casting 2</option>
-        <option value="Basic Ore Miner - Level 3a">Rapids Casting 3</option>
-        <option value="Basic Ore Miner - Level 4a">Rapids Casting 4</option>
-        <option value="Basic Ore Miner - Level 5a">Rapids Casting 5</option>
-	  </select>
-    </div>
-
-  <div id="rotational"  class="style-sub-1"  style="display: none;" name="stylesub1" onchange="ChangeDropdowns(this.value)">
-      <label>Material: </label>
-          <select id="Rotational Modeling" name="Rotational Modeling">
-	          <option value="">-Choose A Material</option>
-		        <option value="Basic Ore Miner - Level 1a">Rotational Modeling 1</option>
-			      <option value="Basic Ore Miner - Level 2a">Rotational Modeling 2</option>
-			            <option value="Basic Ore Miner - Level 3a">Rotational Modeling 3</option>
-				          <option value="Basic Ore Miner - Level 4a">Rotational Modeling 4</option>
-					        <option value="Basic Ore Miner - Level 5a">Rotational Modeling 5</option>
-						  </select>
-	    </div>
-
-    <div id="vacuum"  class="style-sub-1"  style="display: none;" name="stylesub1" onchange="ChangeDropdowns(this.value)">
-          <label>Material: </label>
-	        <select id="Vacuum Forming" name="Vacuum Forming">
-		          <option value="">-Choose A Material</option>
-			          <option value="Basic Ore Miner - Level 1a">Vacuum Forming 1</option>
-				          <option value="Basic Ore Miner - Level 2a">Vacuum Forming 2</option>
-					          <option value="Basic Ore Miner - Level 3a">Vacuum Forming 3</option>
-						          <option value="Basic Ore Miner - Level 4a">Vacuum Forming 4</option>
-							          <option value="Basic Ore Miner - Level 5a">Vacuum Forming 5</option>
-								    </select>
-		    </div>
-
-    <div id="fiber"  class="style-sub-1"  style="display: none;" name="stylesub1" onchange="ChangeDropdowns(this.value)">
         <label>Material: </label>
-	    <select id="Fiber Reinforced Composites" name="Fiber Reinforced Composites">
-	            <option value="">-Choose A Material</option>
-		          <option value="Basic Ore Miner - Level 1a">Fiber Reinforced Composites 1</option>
-			        <option value="Basic Ore Miner - Level 2a">Fiber Reinforced Composites 2</option>
-				      <option value="Basic Ore Miner - Level 3a">Fiber Reinforced Composites 3</option>
-				            <option value="Basic Ore Miner - Level 4a">Fiber Reinforced Composites 4</option>
-					          <option value="Basic Ore Miner - Level 5a">Fiber Reinforced Composites 5</option>
-						    </select>
-	      </div>
-
-      <div id="nests"  class="style-sub-1"  style="display: none;" name="stylesub1" onchange="ChangeDropdowns(this.value)">
-	    <label>Material: </label>
-	          <select id="Production Nests and Fixtures" name="Production Nests and Fixtures">
-		            <option value="">-Choose A Material</option>
-			            <option value="Basic Ore Miner - Level 1a">Production Nests and Fixtures 1</option>
-				            <option value="Basic Ore Miner - Level 2a">Production Nests and Fixtures 2</option>
-					            <option value="Basic Ore Miner - Level 3a">Production Nests and Fixtures 3</option>
-						            <option value="Basic Ore Miner - Level 4a">Production Nests and Fixtures 4</option>
-							            <option value="Basic Ore Miner - Level 5a">Production Nests and Fixtures 5</option>
-								      </select>
-		      </div>
-
-      <div id="injection"  class="style-sub-1"  style="display: none;" name="stylesub1" onchange="ChangeDropdowns(this.value)">
-	  <label>Material: </label>
-	      <select id="Injection Molding" name="Injection Molding">
-		      <option value="">-Choose A Material</option>
-		            <option value="Basic Ore Miner - Level 1a">Injection Molding 1</option>
-			          <option value="Basic Ore Miner - Level 2a">Injection Molding 2</option>
-				        <option value="Basic Ore Miner - Level 3a">Injection Molding 3</option>
-					      <option value="Basic Ore Miner - Level 4a">Injection Molding 4</option>
-					            <option value="Basic Ore Miner - Level 5a">Injection Molding 5</option>
-						      </select>
-	        </div>
-
-        <div id="cnc"  class="style-sub-1"  style="display: none;" name="stylesub1" onchange="ChangeDropdowns(this.value)">
-	      <label>Material: </label>
-	            <select id="CNC Machining" name="CNC Machining">
-		              <option value="">-Choose A Material</option>
-			              <option value="Basic Ore Miner - Level 1a">CNC Machining 1</option>
-				              <option value="Basic Ore Miner - Level 2a">CNC Machining 2</option>
-					              <option value="Basic Ore Miner - Level 3a">CNC Machining 3</option>
-						              <option value="Basic Ore Miner - Level 4a">CNC Machining 4</option>
-							              <option value="Basic Ore Miner - Level 5a">CNC Machining 5</option>
-								        </select>
-		        </div>
-
-	<div id="model"  class="style-sub-1"  style="display: none;" name="stylesub1" onchange="ChangeDropdowns(this.value)">
-	    <label>Material: </label>
-	        <select id="Modeling" name="Modeling">
+	      <select id="Rapids Casting" name="Rapids Casting">
 		        <option value="">-Choose A Material</option>
-			      <option value="Basic Ore Miner - Level 1a">Modeling 1</option>
-			            <option value="Basic Ore Miner - Level 2a">Modeling 2</option>
-				          <option value="Basic Ore Miner - Level 3a">Modeling 3</option>
-					        <option value="Basic Ore Miner - Level 4a">Modeling 4</option>
-						      <option value="Basic Ore Miner - Level 5a">Modeling 5</option>
-						        </select>
-		  </div>
-        <div class="clear"></div><div id="error-message-style-sub-1"></div>
+			        <option value="Basic Ore Miner - Level 1a">Rapids Casting 1</option>
+				        <option value="Basic Ore Miner - Level 2a">Rapids Casting 2</option>
+					        <option value="Basic Ore Miner - Level 3a">Rapids Casting 3</option>
+						        <option value="Basic Ore Miner - Level 4a">Rapids Casting 4</option>
+							        <option value="Basic Ore Miner - Level 5a">Rapids Casting 5</option>
+								  </select>
+	          </div>
 
+
+        <div class="clear"></div><div id="error-message-style-sub-1"></div>
+	
 
 
 <dl>
@@ -327,6 +251,9 @@
 
   </div><br>
 </form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jqu\
+ery.min.js"></script>
+<script src='orderPage.js'></script>
 
 </div><!--col 1 form-->
 

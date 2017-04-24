@@ -116,6 +116,10 @@ if (isset($_POST['logout'])){
 
 			<h2>Change content on different Pages</h2>
 			<select name="pages">
+				<option value="files/blank.xml"></option>
+				<option value="files/about.xml">About</option>
+				<option value="files/services.xml">Services</option>
+				<option value="files/gallery.xml">Gallery</option>
 				<option value="files/contact.xml">Contact</option>
 				<option value="files/order.xml">Order</option>
 			</select>

@@ -26,7 +26,7 @@ Email : $email
 Phone Number : $phone
 
 Process : $process
-Material : $material
+
 Quantity : $quantity
 Finish Level : $finishLevel
 Additional Info :
